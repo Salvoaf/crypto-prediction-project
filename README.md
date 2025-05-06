@@ -117,9 +117,7 @@ Il progetto è strutturato per essere facilmente estendibile a:
 
 ---
 
-## 📜 Licenza
 
-[Inserisci tipo di licenza, ad esempio MIT License]
 
 ---
 
@@ -130,6 +128,3 @@ Il progetto è strutturato per essere facilmente estendibile a:
 🎯 **Consiglio pratico**: appena finisci ogni task (tipo allenare un modello, fare un grafico), **torna nel README** e aggiorna subito i risultati o aggiungi note, così ti trovi tutto pronto alla fine!
 
 ---
-
-Se vuoi ti preparo anche **requirements.txt** pronto per questo progetto base.  
-Vuoi anche quello? 🚀
