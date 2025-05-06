@@ -1,0 +1,317 @@
+2025-05-05 12:50:37,388 - ERROR - Data files not found. Please ensure you have run the preprocessing steps first.
+2025-05-05 12:50:37,390 - ERROR - Error in main execution: [Errno 2] No such file or directory: 'data/processed/features_labels.csv'
+2025-05-05 12:56:24,105 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 12:56:24,119 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 12:56:25,072 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 12:56:25,073 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 12:56:25,151 - INFO - [STEP 3] Feature engineering
+2025-05-05 12:56:30,456 - INFO - [STEP 4] Label generation
+2025-05-05 12:56:30,867 - INFO - [STEP 5] Feature scaling
+2025-05-05 12:56:31,775 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 12:56:31,887 - INFO - [STEP 7] Train/test split
+2025-05-05 12:56:32,068 - INFO - Train shape: (284295, 59), Test shape: (66777, 59)
+2025-05-05 12:56:32,505 - INFO - Starting Random Forest GridSearchCV...
+2025-05-05 13:11:52,327 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 13:11:52,812 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 16:05:34,587 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 16:05:36,720 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 16:05:54,155 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 16:05:54,287 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 16:05:55,328 - INFO - [STEP 3] Feature engineering
+2025-05-05 16:06:32,677 - INFO - [STEP 4] Label generation
+2025-05-05 16:06:35,240 - INFO - [STEP 5] Feature scaling
+2025-05-05 16:06:40,070 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 16:06:40,829 - INFO - [STEP 7] Train/test split
+2025-05-05 16:06:42,246 - INFO - Train shape: (284295, 59), Test shape: (66777, 59)
+2025-05-05 16:06:44,542 - INFO - Starting Random Forest GridSearchCV...
+2025-05-05 16:19:43,324 - INFO - Best parameters: {'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 200}
+2025-05-05 16:19:43,345 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 16:29:13,897 - INFO - Best parameters: {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 100, 'subsample': 0.8}
+2025-05-05 16:29:16,197 - INFO - 
+Logistic Regression Metrics:
+2025-05-05 16:29:16,197 - INFO - Accuracy: 0.5252
+2025-05-05 16:29:16,197 - INFO - F1 Score: 0.5872
+2025-05-05 16:29:16,197 - INFO - ROC AUC: 0.5253
+2025-05-05 16:29:16,592 - INFO - 
+Random Forest Metrics:
+2025-05-05 16:29:16,592 - INFO - Accuracy: 0.4807
+2025-05-05 16:29:16,592 - INFO - F1 Score: 0.0401
+2025-05-05 16:29:16,592 - INFO - ROC AUC: 0.5270
+2025-05-05 16:29:16,786 - INFO - 
+XGBoost Metrics:
+2025-05-05 16:29:16,788 - INFO - Accuracy: 0.5068
+2025-05-05 16:29:16,789 - INFO - F1 Score: 0.3370
+2025-05-05 16:29:16,789 - INFO - ROC AUC: 0.5360
+2025-05-05 16:29:20,041 - ERROR - Error in main execution: 'charmap' codec can't encode character '\u0394' in position 339: character maps to <undefined>
+2025-05-05 18:01:45,042 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 18:01:45,279 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 18:01:47,380 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 18:01:47,380 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 18:01:47,432 - INFO - [STEP 3] Feature engineering
+2025-05-05 18:01:49,607 - INFO - [STEP 4] Label generation
+2025-05-05 18:01:50,024 - INFO - [STEP 5] Feature scaling
+2025-05-05 18:01:50,817 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 18:01:50,914 - INFO - [STEP 7] Train/test split
+2025-05-05 18:01:51,058 - INFO - Train shape: (284313, 59), Test shape: (66777, 59)
+2025-05-05 18:01:51,430 - INFO - Starting Random Forest GridSearchCV...
+2025-05-05 18:14:56,144 - INFO - Best parameters: {'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-05-05 18:14:56,147 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 18:15:55,803 - INFO - Best parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'subsample': 1.0}
+2025-05-05 18:15:55,925 - INFO - 
+Logistic Regression Metrics:
+2025-05-05 18:15:55,925 - INFO - Accuracy: 0.5168
+2025-05-05 18:15:55,925 - INFO - F1 Score: 0.5778
+2025-05-05 18:15:55,925 - INFO - ROC AUC: 0.5157
+2025-05-05 18:15:56,383 - INFO - 
+Random Forest Metrics:
+2025-05-05 18:15:56,383 - INFO - Accuracy: 0.4976
+2025-05-05 18:15:56,383 - INFO - F1 Score: 0.1884
+2025-05-05 18:15:56,383 - INFO - ROC AUC: 0.5288
+2025-05-05 18:15:56,621 - INFO - 
+XGBoost Metrics:
+2025-05-05 18:15:56,623 - INFO - Accuracy: 0.5118
+2025-05-05 18:15:56,623 - INFO - F1 Score: 0.4309
+2025-05-05 18:15:56,623 - INFO - ROC AUC: 0.5290
+2025-05-05 18:15:59,258 - WARNING - Random Forest did not meet improvement thresholds!
+2025-05-05 18:15:59,283 - WARNING - XGBoost did not meet improvement thresholds!
+2025-05-05 18:15:59,287 - INFO - Day 7 completed successfully!
+2025-05-05 18:17:10,980 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 18:17:10,998 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 18:17:11,980 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 18:17:11,980 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 18:17:12,032 - INFO - [STEP 3] Feature engineering
+2025-05-05 18:17:13,710 - INFO - [STEP 4] Label generation
+2025-05-05 18:17:13,844 - INFO - [STEP 5] Feature scaling
+2025-05-05 18:17:14,216 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 18:17:14,258 - INFO - [STEP 7] Train/test split
+2025-05-05 18:17:14,330 - INFO - Train shape: (284313, 59), Test shape: (66777, 59)
+2025-05-05 18:17:14,493 - INFO - Starting Random Forest GridSearchCV...
+2025-05-05 18:18:02,977 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 18:18:02,989 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 18:18:03,444 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 18:18:03,444 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 18:18:03,483 - INFO - [STEP 3] Feature engineering
+2025-05-05 18:18:05,493 - INFO - [STEP 4] Label generation
+2025-05-05 18:18:05,705 - INFO - [STEP 5] Feature scaling
+2025-05-05 18:18:06,238 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 18:18:06,293 - INFO - [STEP 7] Train/test split
+2025-05-05 18:18:06,409 - INFO - Train shape: (284313, 59), Test shape: (66777, 59)
+2025-05-05 18:18:06,675 - INFO - Starting Random Forest GridSearchCV...
+2025-05-05 18:21:12,632 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 18:21:12,643 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 18:21:13,530 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 18:21:13,531 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 18:21:13,601 - INFO - [STEP 3] Feature engineering
+2025-05-05 18:21:17,059 - INFO - [STEP 4] Label generation
+2025-05-05 18:21:17,277 - INFO - [STEP 5] Feature scaling
+2025-05-05 18:21:17,825 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 18:21:17,899 - INFO - [STEP 7] Train/test split
+2025-05-05 18:21:18,030 - INFO - Train shape: (284313, 59), Test shape: (66777, 59)
+2025-05-05 18:21:18,298 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 18:22:05,176 - INFO - Best parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'subsample': 1.0}
+2025-05-05 18:22:05,177 - ERROR - Error in main execution: name 'load_selected_features' is not defined
+2025-05-05 18:23:16,927 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 18:23:16,927 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 18:23:17,400 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 18:23:17,400 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 18:23:17,444 - INFO - [STEP 3] Feature engineering
+2025-05-05 18:23:20,211 - INFO - [STEP 4] Label generation
+2025-05-05 18:23:20,448 - INFO - [STEP 5] Feature scaling
+2025-05-05 18:23:21,103 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 18:23:21,179 - INFO - [STEP 7] Train/test split
+2025-05-05 18:23:21,313 - INFO - Train shape: (284313, 59), Test shape: (66777, 59)
+2025-05-05 18:23:21,752 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 18:24:14,297 - INFO - Best parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'subsample': 1.0}
+2025-05-05 18:24:14,297 - ERROR - Error in main execution: name 'load_selected_features' is not defined
+2025-05-05 18:25:34,009 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 18:25:34,126 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 18:25:43,548 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 18:25:43,550 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 18:25:43,830 - INFO - [STEP 3] Feature engineering
+2025-05-05 18:25:54,358 - INFO - [STEP 4] Label generation
+2025-05-05 18:25:55,405 - INFO - [STEP 5] Feature scaling
+2025-05-05 18:25:57,217 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 18:25:57,436 - INFO - [STEP 7] Train/test split
+2025-05-05 18:25:57,802 - INFO - Train shape: (284313, 59), Test shape: (66777, 59)
+2025-05-05 18:25:58,860 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 18:27:08,442 - INFO - Best parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'subsample': 1.0}
+2025-05-05 18:27:08,444 - INFO - Feature selection: calcolo le top 20 feature con XGBoost...
+2025-05-05 18:27:08,523 - INFO - Retrain Logistic Regression sulle feature selezionate...
+2025-05-05 18:27:09,394 - INFO - 
+Logistic Regression Metrics:
+2025-05-05 18:27:09,394 - INFO - Accuracy: 0.5128
+2025-05-05 18:27:09,396 - INFO - F1 Score: 0.6075
+2025-05-05 18:27:09,398 - INFO - ROC AUC: 0.5072
+2025-05-05 18:27:09,398 - INFO - Retrain Random Forest sulle feature selezionate...
+2025-05-05 18:27:09,400 - INFO - Starting Random Forest GridSearchCV...
+2025-05-05 18:34:16,629 - INFO - Best parameters: {'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-05-05 18:34:17,166 - INFO - 
+Random Forest Metrics:
+2025-05-05 18:34:17,168 - INFO - Accuracy: 0.4966
+2025-05-05 18:34:17,168 - INFO - F1 Score: 0.1696
+2025-05-05 18:34:17,170 - INFO - ROC AUC: 0.5400
+2025-05-05 18:34:17,170 - INFO - Retrain XGBoost sulle feature selezionate...
+2025-05-05 18:34:17,170 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 18:34:36,499 - INFO - Best parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'subsample': 1.0}
+2025-05-05 18:34:36,736 - INFO - 
+XGBoost Metrics:
+2025-05-05 18:34:36,737 - INFO - Accuracy: 0.5067
+2025-05-05 18:34:36,737 - INFO - F1 Score: 0.3139
+2025-05-05 18:34:36,737 - INFO - ROC AUC: 0.5289
+2025-05-05 18:34:40,647 - WARNING - Random Forest did not meet improvement thresholds!
+2025-05-05 18:34:40,663 - WARNING - XGBoost did not meet improvement thresholds!
+2025-05-05 18:34:40,672 - INFO - Day 7 completed successfully!
+2025-05-05 18:52:08,980 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 18:52:08,997 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 18:52:14,589 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 18:52:14,592 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 18:52:14,857 - INFO - [STEP 3] Feature engineering
+2025-05-05 18:52:14,861 - ERROR - Error in main execution: [Errno 2] No such file or directory: 'E:/data_cache/BTCUSDT_weekly.csv'
+2025-05-05 18:59:37,484 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 18:59:37,510 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 18:59:40,228 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 18:59:40,231 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 18:59:40,515 - INFO - [STEP 3] Feature engineering
+2025-05-05 18:59:40,724 - ERROR - Error in main execution: "None of ['Open time'] are in the columns"
+2025-05-05 19:02:46,473 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:02:46,634 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:02:52,239 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 19:02:52,243 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 19:02:52,704 - INFO - [STEP 3] Feature engineering
+2025-05-05 19:06:03,911 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:06:03,938 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:06:06,378 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 19:06:06,380 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 19:06:06,635 - INFO - [STEP 3] Feature engineering
+2025-05-05 19:06:20,585 - INFO - [STEP 4] Label generation
+2025-05-05 19:06:22,397 - INFO - [STEP 5] Feature scaling
+2025-05-05 19:06:26,815 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 19:06:27,163 - INFO - [STEP 7] Train/test split
+2025-05-05 19:06:27,751 - INFO - Train shape: (284313, 77), Test shape: (66777, 77)
+2025-05-05 19:06:58,114 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:06:58,144 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:07:01,072 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 19:07:01,081 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 19:07:01,371 - INFO - [STEP 3] Feature engineering
+2025-05-05 19:07:18,011 - INFO - [STEP 4] Label generation
+2025-05-05 19:07:19,354 - INFO - [STEP 5] Feature scaling
+2025-05-05 19:07:22,459 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 19:07:23,092 - INFO - [STEP 7] Train/test split
+2025-05-05 19:07:24,086 - INFO - Train shape: (284313, 77), Test shape: (66777, 77)
+2025-05-05 19:07:25,828 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 19:08:40,956 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:08:40,989 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:08:43,537 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 19:08:43,538 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 19:08:43,771 - INFO - [STEP 3] Feature engineering
+2025-05-05 19:09:01,447 - INFO - [STEP 4] Label generation
+2025-05-05 19:09:04,045 - INFO - [STEP 5] Feature scaling
+2025-05-05 19:09:06,944 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 19:09:07,327 - INFO - [STEP 7] Train/test split
+2025-05-05 19:09:07,996 - INFO - Train shape: (284313, 77), Test shape: (66777, 77)
+2025-05-05 19:09:09,603 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 19:10:30,446 - INFO - Best parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'subsample': 1.0}
+2025-05-05 19:10:30,449 - INFO - Feature selection: uso feature già salvate (20 feature)
+2025-05-05 19:10:30,548 - INFO - Retrain Logistic Regression sulle feature selezionate...
+2025-05-05 19:10:32,574 - INFO - 
+Logistic Regression Metrics:
+2025-05-05 19:10:32,576 - INFO - Accuracy: 0.5128
+2025-05-05 19:10:32,578 - INFO - F1 Score: 0.6075
+2025-05-05 19:10:32,579 - INFO - ROC AUC: 0.5072
+2025-05-05 19:10:32,581 - INFO - Retrain Random Forest sulle feature selezionate...
+2025-05-05 19:10:32,583 - INFO - Starting Random Forest GridSearchCV...
+2025-05-05 19:11:58,000 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:11:58,033 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:12:00,563 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 19:12:00,565 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 19:12:00,804 - INFO - [STEP 3] Feature engineering
+2025-05-05 19:12:17,826 - INFO - [STEP 4] Label generation
+2025-05-05 19:12:19,055 - INFO - [STEP 5] Feature scaling
+2025-05-05 19:12:21,866 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 19:12:22,263 - INFO - [STEP 7] Train/test split
+2025-05-05 19:12:22,813 - INFO - Train shape: (284313, 77), Test shape: (66777, 77)
+2025-05-05 19:12:24,428 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 19:13:21,374 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:13:21,399 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:13:24,294 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 19:13:24,296 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 19:13:24,536 - INFO - [STEP 3] Feature engineering
+2025-05-05 19:15:58,694 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:15:58,721 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:16:30,457 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:16:30,545 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:16:33,968 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 19:16:33,974 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 19:16:34,358 - INFO - [STEP 3] Feature engineering
+2025-05-05 19:18:02,640 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:18:02,669 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:18:05,055 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 19:18:05,057 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 19:18:05,280 - INFO - [STEP 3] Feature engineering
+2025-05-05 19:18:34,150 - INFO - [STEP 4] Label generation
+2025-05-05 19:18:35,301 - INFO - [STEP 5] Feature scaling
+2025-05-05 19:18:38,990 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 19:18:39,331 - INFO - [STEP 7] Train/test split
+2025-05-05 19:18:39,800 - INFO - Train shape: (93856, 117), Test shape: (66777, 117)
+2025-05-05 19:18:40,830 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 19:18:40,938 - ERROR - Error in main execution: Found array with 0 sample(s) (shape=(0,)) while a minimum of 1 is required.
+2025-05-05 19:19:33,734 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:19:33,763 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:19:36,192 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 19:19:36,196 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 19:19:36,413 - INFO - [STEP 3] Feature engineering
+2025-05-05 19:20:04,110 - INFO - [STEP 4] Label generation
+2025-05-05 19:20:04,123 - INFO - [STEP 5] Feature scaling
+2025-05-05 19:20:04,135 - ERROR - Error in main execution: Found array with 0 sample(s) (shape=(0, 114)) while a minimum of 1 is required by StandardScaler.
+2025-05-05 19:23:14,866 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:23:14,894 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:23:17,399 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 19:23:17,401 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 19:23:17,635 - INFO - [STEP 3] Feature engineering
+2025-05-05 19:23:43,793 - INFO - [STEP 4] Label generation
+2025-05-05 19:23:44,525 - INFO - [STEP 5] Feature scaling
+2025-05-05 19:23:47,932 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 19:23:48,376 - INFO - [STEP 7] Train/test split
+2025-05-05 19:23:48,899 - INFO - Train shape: (93856, 117), Test shape: (66777, 117)
+2025-05-05 19:23:49,742 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 19:23:49,805 - ERROR - Error in main execution: Found array with 0 sample(s) (shape=(0,)) while a minimum of 1 is required.
+2025-05-05 19:28:11,391 - INFO - [STEP 1] Loading multi-crypto data
+2025-05-05 19:28:11,417 - INFO - Loading files: ['1000CATUSDT.csv', '1000CHEEMSUSDT.csv', '1000SATSUSDT.csv', '1INCHDOWNUSDT.csv', '1INCHUPUSDT.csv', '1INCHUSDT.csv', '1MBABYDOGEUSDT.csv', 'A8USDT.csv', 'AAVEDOWNUSDT.csv', 'AAVEUPUSDT.csv', 'AAVEUSDT.csv', 'ACAUSDT.csv', 'ACEUSDT.csv', 'ACHUSDT.csv', 'ACMUSDT.csv', 'ACTUSDT.csv', 'ACXUSDT.csv', 'ADADOWNUSDT.csv', 'ADAUPUSDT.csv', 'BTCUSDT.csv']
+2025-05-05 19:28:14,043 - INFO - [INFO] Loaded data shape: (360777, 7)
+2025-05-05 19:28:14,047 - INFO - [STEP 2] Normalizing timestamps
+2025-05-05 19:28:14,296 - INFO - [STEP 3] Feature engineering
+2025-05-05 19:28:40,553 - INFO - [STEP 4] Label generation
+2025-05-05 19:28:41,042 - INFO - [STEP 5] Feature scaling
+2025-05-05 19:28:42,035 - INFO - [STEP 6] Reconstructing scaled DataFrame
+2025-05-05 19:28:42,178 - INFO - [STEP 7] Train/test split
+2025-05-05 19:28:42,371 - INFO - Train shape: (93856, 77), Test shape: (66777, 77)
+2025-05-05 19:28:42,869 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 19:29:16,024 - INFO - Best parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'subsample': 1.0}
+2025-05-05 19:29:16,028 - INFO - Feature selection: uso feature già salvate (20 feature)
+2025-05-05 19:29:16,064 - INFO - Retrain Logistic Regression sulle feature selezionate...
+2025-05-05 19:29:16,722 - INFO - 
+Logistic Regression Metrics:
+2025-05-05 19:29:16,723 - INFO - Accuracy: 0.5155
+2025-05-05 19:29:16,727 - INFO - F1 Score: 0.6664
+2025-05-05 19:29:16,729 - INFO - ROC AUC: 0.4999
+2025-05-05 19:29:16,732 - INFO - Retrain Random Forest sulle feature selezionate...
+2025-05-05 19:29:16,733 - INFO - Starting Random Forest GridSearchCV...
+2025-05-05 19:31:11,769 - INFO - Best parameters: {'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-05-05 19:31:12,276 - INFO - 
+Random Forest Metrics:
+2025-05-05 19:31:12,278 - INFO - Accuracy: 0.4916
+2025-05-05 19:31:12,278 - INFO - F1 Score: 0.1176
+2025-05-05 19:31:12,280 - INFO - ROC AUC: 0.5254
+2025-05-05 19:31:12,284 - INFO - Retrain XGBoost sulle feature selezionate...
+2025-05-05 19:31:12,294 - INFO - Starting XGBoost GridSearchCV...
+2025-05-05 19:31:20,789 - INFO - Best parameters: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-05-05 19:31:21,171 - INFO - 
+XGBoost Metrics:
+2025-05-05 19:31:21,172 - INFO - Accuracy: 0.5179
+2025-05-05 19:31:21,174 - INFO - F1 Score: 0.5595
+2025-05-05 19:31:21,174 - INFO - ROC AUC: 0.5212
+2025-05-05 19:31:25,842 - WARNING - Random Forest did not meet improvement thresholds!
+2025-05-05 19:31:25,844 - WARNING - Delta Accuracy: -0.0240, Delta ROC AUC: 0.0255
+2025-05-05 19:31:25,844 - WARNING - XGBoost did not meet improvement thresholds!
+2025-05-05 19:31:25,846 - WARNING - Delta Accuracy: 0.0024, Delta ROC AUC: 0.0213
+2025-05-05 19:31:25,846 - INFO - Day 7 completed successfully!
