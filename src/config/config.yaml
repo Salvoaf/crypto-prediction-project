@@ -1,0 +1,77 @@
+# Data Configuration
+data:
+  data_dir: "D:/data_cache"
+  validation_months:
+    - [12, 2019]  # Dicembre 2019 per validation
+  sequence_length: 24  # 24 ore di dati per ogni sequenza
+
+# Feature Engineering
+features:
+  sequence_length: 24
+  indicators:
+    - bollinger_bands
+    - rsi
+    - macd
+    - atr
+    - stochastic
+    - volume_ma
+
+# Trading Environment
+env:
+  initial_balance: 10000
+  commission_rate: 0.001  # 0.1% per trade
+  slippage: 0.0005  # 0.05% slippage per trade
+  max_position: 1.0  # Massimo 100% del capitale in una posizione
+  reward_scaling: 1.0
+  window_size: 24  # Dimensione della finestra per le features
+  running_mean_window: 20  # Finestra per la media mobile del reward
+  running_std_window: 20  # Finestra per la deviazione standard mobile del reward
+  min_trade_threshold: 0.1  # Soglia minima per eseguire un trade
+  stop_loss: 0.02  # 2% stop loss
+  take_profit: 0.04  # 4% take profit
+  
+  # Nuove costanti per il sistema di reward
+  delta_time_penalty: 0.001  # Penalità per inattività
+  trade_execution_bonus: 0.01  # Bonus per esecuzione trade
+  holding_cost_alpha: 0.0005  # Coefficiente per holding cost
+  max_drawdown_threshold: 0.1  # Soglia massima drawdown (10%)
+  drawdown_penalty: 0.1  # Penalità per drawdown eccessivo
+  min_trades_per_episode: 5  # Numero minimo di trade per episodio
+  end_episode_penalty: 0.5  # Penalità per numero insufficiente di trade
+  curiosity_coef: 0.001  # Coefficiente per bonus di curiosità
+
+# Model Configuration
+model:
+  type: "ppo"
+  learning_rate: 0.0003
+  n_steps: 2048  # Numero di step per ogni update
+  batch_size: 64
+  n_epochs: 10
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  clip_ratio: 0.2
+  entropy_coef: 0.01
+  value_coef: 0.5
+  max_grad_norm: 0.5
+  save_path: "models/btc_ppo_model"
+  results_path: "results/btc_backtest_results.csv"
+
+# Training Configuration
+training:
+  total_timesteps: 1000000
+  eval_freq: 10000
+  n_eval_episodes: 10
+  save_freq: 50000
+  tensorboard_log: "./logs"
+
+# Evaluation Configuration
+evaluation:
+  test_start_date: "2024-01-01"
+  test_end_date: "2024-03-01"
+  metrics:
+    - sharpe_ratio
+    - sortino_ratio
+    - max_drawdown
+    - win_rate
+    - profit_factor 

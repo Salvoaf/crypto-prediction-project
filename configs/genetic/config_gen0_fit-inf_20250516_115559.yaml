@@ -1,0 +1,76 @@
+config:
+  data:
+    data_dir: D:\\data_cache
+    end_date: '2023-12-31'
+    start_date: '2020-01-01'
+    symbols:
+    - BTCUSDT
+    - ETHUSDT
+    test_ratio: 0.15
+    timeframe: 1h
+    train_ratio: 0.7
+    val_ratio: 0.15
+  env:
+    commission_rate: 0.0009799027151378501
+    curiosity_coef: 0.01
+    delta_time_penalty: 0.001
+    drawdown_penalty: 0.1
+    end_episode_penalty: 0.1
+    holding_cost_alpha: 0.0001
+    initial_balance: 6850
+    max_drawdown_threshold: 0.1
+    max_position: 0.4562476791729715
+    min_trade_threshold: 0.06227488144107072
+    min_trades_per_episode: 5
+    reward_scaling: 0.05604087765265282
+    running_mean_window: 25
+    running_std_window: 14
+    slippage: 0.0005298456174793335
+    stop_loss: 0.04124671690146998
+    take_profit: 0.05331041779304843
+    trade_execution_bonus: 0.01
+  evaluation:
+    test_end_date: '2023-12-31'
+    test_start_date: '2022-01-01'
+  features:
+    ema_periods:
+    - 5
+    - 10
+    - 20
+    - 50
+    - 100
+    - 200
+    sequence_length: 60
+    sma_periods:
+    - 5
+    - 10
+    - 20
+    - 50
+    - 100
+    - 200
+    timeframes:
+    - 1h
+    - 2h
+    - 4h
+    - 12h
+    - 24h
+    - 7d
+  model:
+    batch_size: 357
+    clip_ratio: 0.141609970227606
+    entropy_coef: 0.09708046240415621
+    gae_lambda: 0.9307316284845703
+    gamma: 0.943726014619498
+    learning_rate: 0.0009747125818955166
+    max_grad_norm: 0.5965965650109952
+    n_epochs: 18
+    n_steps: 3783
+    value_coef: 0.607478210882699
+  training:
+    eval_freq: 10000
+    n_eval_episodes: 5
+    tensorboard_log: logs/tensorboard
+    total_timesteps: 1000000
+fitness: -.inf
+generation: 0
+timestamp: '20250516_115559'
